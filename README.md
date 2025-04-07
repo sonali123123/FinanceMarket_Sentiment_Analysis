@@ -55,12 +55,12 @@ pip install -r requirements.txt
    - Create a `.env` file in the root directory
    - Add necessary API keys 
 
-7. Run the API locally 
-```bash
-uvicorn main:app --reload
-```
-
-  - The API will be available at http://localhost:8000/sentiment?company=AAPL
+7. Run the API locally:
+    ```bash
+    fastapi run main.py --port 8000
+    ```
+    - Once the server is running, open your browser and navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
+    - In the Swagger UI, find the GET `/sentiment` endpoint, click on **Try it out**, and input a company ticker or name (for example, `AAPL`) in the required field.
 
 ## Docker Containerization
 Build the Docker Image:
