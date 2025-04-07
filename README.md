@@ -86,3 +86,15 @@ curl "http://localhost:8000/sentiment?company=AAPL"
 ```
 
 Postman: Create a GET request to the same URL.
+
+## Assumptions & Design
+
+Modular Design: Each component (news fetching, preprocessing, sentiment analysis, aggregation) is independent for easy updates.
+
+API Key Management: Uses a .env file for secure configuration.
+
+Text & Sentiment Processing: Basic cleaning and FinBERT-based sentiment analysis, extendable for more advanced NLP.
+
+FastAPI: Provides high performance and interactive documentation.
+
+This concise setup allows for future enhancements like advanced NLP, improved aggregation, and scalability.
